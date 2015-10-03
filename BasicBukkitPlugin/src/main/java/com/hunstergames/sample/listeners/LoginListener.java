@@ -9,7 +9,7 @@ import com.hunstergames.sample.SamplePlugin;
 
 // Reference:  http://wiki.bukkit.org/Event_API_Reference#The_Basics
 public final class LoginListener implements Listener {
-	SamplePlugin plugin;
+	final SamplePlugin plugin;
 	
 	public LoginListener(SamplePlugin plugin) {
 		this.plugin = plugin;

@@ -1,3 +1,9 @@
 name: BasicBukkitPlugin
 main: com.hunstergames.sample.SamplePlugin
 version: 1.0
+commands:
+  echo:
+    description: This is a demo command that just echos back something to the user
+    usage: On console, /<command> [player] [single word msg] -OR- if player, /<command> [single word msg]
+    permission: <plugin name>.echo
+    permission-message: You do not have <permission>

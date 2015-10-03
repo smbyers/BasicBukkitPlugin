@@ -1,6 +1,7 @@
 package com.hunstergames.sample.listeners;
 
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerLoginEvent;
 
@@ -15,7 +16,7 @@ public final class LoginListener implements Listener {
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);
 	}
 	
-	@EventHandler
+	@EventHandler(priority = EventPriority.MONITOR)
 	public void onLogin(PlayerLoginEvent event) {
 		this.plugin.getLogger().info("Player " + event.getPlayer().getName() + " is logged in!");
 	}

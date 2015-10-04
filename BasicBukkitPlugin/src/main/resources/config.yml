@@ -1,0 +1,7 @@
+# default config.yml
+greeting: Hello there!
+days:
+  ofweek:
+    - Monday
+    - Tuesday
+    - Wednesday
